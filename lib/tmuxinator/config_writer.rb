@@ -46,7 +46,6 @@ module Tmuxinator
       end
 
       exit!("Your configuration file should include some tabs.")        if yaml["tabs"].nil?
-      exit!("Your configuration file didn't specify a 'project_root'")  if yaml["project_root"].nil?
       exit!("Your configuration file didn't specify a 'project_name'")  if yaml["project_name"].nil?
 
       @project_name = yaml["project_name"]
